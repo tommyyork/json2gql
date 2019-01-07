@@ -1,0 +1,11 @@
+shortName
+productFeatures {
+  content {
+    key
+    header
+    desc {
+      type
+      text
+    }
+  }
+}

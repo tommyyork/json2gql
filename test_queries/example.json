@@ -1,0 +1,47 @@
+{
+  "shortName": "product shortname",
+  "productFeatures": {
+    "content": [
+      {
+        "key": "welcomeBonus",
+        "header": "Welcome Bonus",
+        "desc": [
+          {
+            "type": "text",
+            "text": "-"
+          }
+        ]
+      },
+      {
+        "key": "annualFee",
+        "header": "Annual Fee",
+        "desc": [
+          {
+            "type": "text",
+            "text": "Annual Fee"
+          }
+        ]
+      },
+      {
+        "key": "productType",
+        "header": "productType",
+        "desc": [
+          {
+            "type": "text",
+            "text": "Type of product."
+          }
+        ]
+      },
+      {
+        "key": "features",
+        "header": "features",
+        "desc": [
+          {
+            "type": "text",
+            "text": "litany of features."
+          }
+        ]
+      }
+    ]
+  }
+}
