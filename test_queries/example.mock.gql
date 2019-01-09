@@ -7,5 +7,6 @@ productFeatures {
       type
       text
     }
+    style
   }
 }
