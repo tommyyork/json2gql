@@ -53,18 +53,9 @@ const generateQueryObject = (input) => {
 const formatOutputObject = (queryObject) => {
     const regex = /: /g;
 
-    let unprocessedQuery = prettyjson.render(
+    let processedQuery = prettyjson.render(
         queryObject, {defaultIndentation: 2, noColor: true}
     ).replace(regex, '');
-
-    // special cases for the reinforcement banner
-
-    const specialCases = [
-        /businessReinforcementBanner/g,
-        /corporateReinforcementBanner/g
-    ];
-    specialCases.forEach((x) => unprocessedQuery = unprocessedQuery.replace(x, 'reinforcementBanner'));
-    processedQuery = unprocessedQuery;
 
     return processedQuery;
 };
