@@ -1,5 +1,5 @@
-const { generateQueryFromObject } = require('./utils/generateQueryFromObject');
+const { json2gql } = require('./utils/json2gql');
 
 module.exports = {
-    generateQueryFromObject
+    json2gql
 };

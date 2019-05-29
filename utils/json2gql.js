@@ -5,7 +5,7 @@ const {
     addBrackets
 } = require('./rawQueryUtils.js');
 
-const generateQueryFromObject = (dataObject) => {
+const json2gql = (dataObject) => {
     const queryObject = generateQueryObject(dataObject);
     const unbracketedQuery = formatOutputObject(queryObject);
     const queryWithIndentation = calculateIndentation(unbracketedQuery);
@@ -15,5 +15,5 @@ const generateQueryFromObject = (dataObject) => {
 };
 
 module.exports = {
-    generateQueryFromObject
+    json2gql
 };

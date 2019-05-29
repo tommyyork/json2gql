@@ -1,7 +1,7 @@
 const fs = require('fs');
-const generateQueryFromObject = require('./utils/generateQueryFromObject.js').generateQueryFromObject;
+const json2gql = require('./utils/json2gql.js').json2gql;
 
-describe('successfully generates queries from the card features data files', () => {
+describe('successfully generates queries from an example JSON object', () => {
     let mockedQueries = [
         {
             name: './test_queries/example.json',
@@ -14,7 +14,7 @@ describe('successfully generates queries from the card features data files', () 
         test(`generates correct query for ${testObject.name}`, done => {
             fs.readFile(testObject.mock, 'utf8', (err, data) => {
                 let mockQuery = data;
-                let generatedString = (generateQueryFromObject(testObject.data));
+                let generatedString = (json2gql(testObject.data));
 
                 expect(generatedString).toEqual(mockQuery);
                 done();
