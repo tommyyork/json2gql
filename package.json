@@ -1,6 +1,6 @@
 {
-  "name": "generategqlqueryfromobject",
-  "version": "0.0.1",
+  "name": "json2gql",
+  "version": "0.0.2",
   "description": "Generate a GraphQL query from a JSON object.",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,10 @@
   "author": "Tommy York",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tommyyork/generateGQLQueryFromObject/issues"
+    "url": "https://github.com/tommyyork/json2gql/issues"
   },
-  "homepage": "https://github.com/tommyyork/generateGQLQueryFromObject#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/tommyyork/json2gql#readme",
+  "dependencies": {
     "deepmerge": "^3.0.0",
     "prettyjson": "^1.2.1"
   }
