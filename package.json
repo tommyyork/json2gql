@@ -1,6 +1,6 @@
 {
   "name": "json2gql",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generate a GraphQL query from a JSON object.",
   "main": "index.js",
   "scripts": {
